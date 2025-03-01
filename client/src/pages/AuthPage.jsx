@@ -1,6 +1,10 @@
 import React from 'react'
 import {useState} from 'react'
 
+import LoginForm from '../components/LoginForm';
+
+
+
 const AuthPage = () => {
     const [isLogin, setIsLogin] = useState(true);
 
@@ -13,7 +17,8 @@ const AuthPage = () => {
 
         </h2>
         <div className='bg-white p-8 shadow-xl rounded-lg'>
-            {isLogin ? <LoginForm /> : <SignupForm />}
+            {isLogin ? <LoginForm /> : <SignUpForm />}
+            
         </div>
     </div>
     </div>
